@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+canvas {
+    border: 2px solid #00ff00;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px #00ff00;
+}
+
+@keyframes fadeBackground {
+    0% { background-image: url('image1.jpg'); }
+    25% { background-image: url('image2.jpg'); }
+    50% { background-image: url('image3.jpg'); }
+    75% { background-image: url('image4.jpg'); }
+    100% { background-image: url('image1.jpg'); }
+}
+
+body {
+    animation: fadeBackground 20s infinite;
+}
+
+#menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #00ff00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #00cc00;
+}
